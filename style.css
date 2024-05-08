@@ -86,9 +86,12 @@ body {
     background-size: cover;
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     position: relative;
     z-index: 12;
+}
+.home .div_btn{
+    padding-top: 5px;
 }
 .home h2{
 
@@ -102,7 +105,7 @@ body {
     position: relative;
 }
 .home .product .prod{
-    width: 32%;
+    width: 40%;
     z-index: 10;
     position: relative;
 }
@@ -114,7 +117,21 @@ body {
     transform: translate(-50%,-50%);
     z-index: 1;
 }
-
+.home ul{
+    position: relative;
+    top: -12px;
+}
+.home ul li{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 5.2vw;
+    margin-bottom: 18px;
+    font-family: "bolde";
+}
+.home ul li:last-child{
+    margin-bottom: 0;
+}
 .curv{
     position: relative;
     z-index: 1;
@@ -132,6 +149,7 @@ body {
     border-radius: 40px;
     position: relative;
     left: 30px;
+    margin-bottom: 30px;
 }
 
 .doctor .content{
@@ -149,8 +167,8 @@ body {
 .doctor .content .doctorimg p{
     background:#24282B ;
     color: #fff;
-    border-radius: 0px 5px 5px 0;
-    padding: 0 5px;
+    border-radius: 0px 10px 10px 0;
+    padding: 2px 5px 1px;
     text-align: center;
     font-size: 5vw;
     line-height: 1.7;
@@ -177,7 +195,7 @@ body {
 .doctor .content .text li{
     background: linear-gradient(to left , #3FA72B , #397430);
     margin-bottom: 8px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
     padding-right: 5%;
     padding-left: 3px;
     color: #fff;
@@ -226,9 +244,9 @@ body {
     color: #00871D;
     background: #fff;
     width: max-content;
-    padding: 0 10px;
+    padding: 0 8px;
     border-radius: 30px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0 auto 15px;
 }
 .result .box{
@@ -251,7 +269,7 @@ body {
     position: relative;
 }
 .result .box .content p{
-    font-size: 5vw;
+    font-size: 5.1vw;
     color: #fff;
     line-height: 1.9;
 }
@@ -325,7 +343,7 @@ form section    */
     background-size: cover;
     background-position: center;
     margin-bottom: 3px;
-    line-height: 2;
+    line-height: 2.2;
 }
 .last_sec .f_p a{
     color: #fff;
@@ -348,17 +366,19 @@ form section    */
 .last_sec .price .sm_p{
     width: 65%;
     position: relative;
+    
 }
 .last_sec .price .sm_p p{
     position: absolute;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     text-align: center;
-    font-weight: bold;
     line-height: 1.4;
     width: 95%;
     top: 40%;
     transform: translate(-50%,-50%);
     left: 50%;
+    font-family: "bolde";
+
 }   
 .last_sec .price .text{
     width: 100%;
@@ -444,6 +464,7 @@ form section    */
 .last_sec .cont_Top p{
     margin-bottom: 0;
     line-height: 1.2;
+    
 }
 .last_sec .div-form .content {
     text-align: center;
