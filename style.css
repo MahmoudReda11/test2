@@ -81,7 +81,7 @@ body {
 /* hero Section */
 
 .home{
-    background: url(img/back.png);
+    background: url(img/Group16.png);
     background-position: bottom center;
     background-size: cover;
     text-align: center;
@@ -132,15 +132,14 @@ body {
 .home ul li:last-child{
     margin-bottom: 0;
 }
-.curv{
-    position: relative;
-    z-index: 1;
-    margin-top: -65px;
-}
+
 /* start doctor section */
 .doctor{
     padding-top: 30px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: -65px;
 }
 .doctor .headsec{
     line-height: 1.2;
@@ -337,17 +336,17 @@ body {
 
 /* last sectikn 
 form section    */
-.last_sec .f_p{
+.f_p{
     background: url(img/Hue_Saturation1.png);
     text-align: center;
     background-size: cover;
     background-position: center;
-    margin-bottom: 3px;
-    line-height: 2.2;
+    padding: 8px 0;
 }
-.last_sec .f_p a{
+ .f_p p{
     color: #fff;
-    font-size: 9vw;
+    font-size: 7vw;
+    line-height: 1.2;
 }
 
 .last_sec .price{
@@ -357,11 +356,16 @@ form section    */
 }
 .last_sec .price .img_prod{
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
     width: 37%;
     margin-left: 5px;
     z-index: 3;
+}
+@media (min-width:430px) {
+    .last_sec .price .img_prod{
+        width: 34%;
+    }
 }
 .last_sec .price .sm_p{
     width: 65%;
@@ -424,7 +428,7 @@ form section    */
     position: relative;
     margin: auto;
     width: max-content;
-    line-height: 0.2;
+    line-height: 0.1;
     z-index: 10;
     font-weight: normal;
     color: #fff;
@@ -470,7 +474,7 @@ form section    */
     text-align: center;
     background: #fff;
     padding: 5px 10px;
-    box-shadow: -5px 2px 8px #036aa575;
+    box-shadow: -5px 2px 8px #1ac50b65;
     margin-top: 10px;
     background: url(img/Rectangle1.png);
     background-size: cover;
@@ -590,8 +594,6 @@ form section    */
 
 
 @media (min-width:500px) {
-
-    
     .div_btn {
         padding: 30px 0;
     }
@@ -740,5 +742,500 @@ form section    */
     }
     .last_sec .footer .boxs .box div{
         font-size: 17px;
+    }
+}
+.big_screen{
+    display: none;
+}
+
+
+/* tablet Design */
+
+@media (min-width:650px) {
+    .f_p p{
+        font-size: 5vw;
+    }
+
+.group{
+    display: none;
+}
+.big_screen{
+    display: block;
+}
+
+.home_sc .top_home{
+    display: flex;
+}
+.home_sc .top_home .box{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0 15px;
+}
+.home_sc .top_home .box_text{
+    background:linear-gradient(-150deg , #4b5e4b , #212c21);
+    color: #fff;
+
+}
+.home_sc .top_home .box_text h2{
+    font-size: 2.5vw;
+    line-height: 1.7;
+    color: #04b82b;
+}
+.home_sc .top_home .box_text p{
+    font-size: 2.6vw;
+    line-height: 1.7;
+
+}
+.home_sc .top_home .box_img{
+    background: url(img/thanksbg.png);
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-right: 20px;
+    text-align: center;
+}
+.home_sc .top_home .box_img img{
+    width: 80px;
+    margin-right: 15px;
+}
+.home_sc .top_home .box_img h3{
+    font-size: 3vw;
+    font-weight: bolder;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+.home_sc .top_home .box_img h4{
+    line-height: 1.4;
+    font-size: 2.7vw;
+    letter-spacing: 2.5px;
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+.home_sc .top_home .box_img h4::after,
+.home_sc .top_home .box_img h4::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 4px;
+    background: #fff;
+}
+.home_sc .top_home .box_img h4::after{
+    right: -25px;
+}
+.home_sc .top_home .box_img h4::before{
+    left: -30px;
+}
+.home_sc .home_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.home_sc .home_text img{
+    width: 200px;
+}
+.home_sc .home_text ul{
+    padding-top: 30px;
+}
+.home_sc .home_text ul li{
+    font-size: 3vw;
+    font-weight: bolder;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.home_sc .home_text .btn{
+    font-size: 2vw;
+}
+.home_sc .home_text ul li:last-child{
+    margin-bottom: 0;
+}
+
+
+
+.flex_sec{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex_sec .doctor{
+    width: 50%;
+    margin-top: 0;
+}
+.doctor .content .text .img_p{
+    margin-top: 20px;
+}
+
+.flex_sec .result{
+    width: 50%;
+}
+
+.result h1{
+    font-size: 4vw;
+}
+.div_btn{
+    padding: 10px 0 15px;
+}
+.div_btn .btn{
+    font-size: 3.5vw;
+}
+
+.doctor .headsec{
+    font-size: 3.4vw;
+}
+.doctor .content .text li{
+    font-size: 2.4vw;
+}
+.doctor .content .doctorimg p{
+    font-size: 2.4vw;
+}
+.doctor .content .text .img_p p{
+    font-size: 2.1vw;
+}
+
+.result .box .content p{
+    font-size: 2.5vw;
+}
+
+.result .box .content img{
+    width: 32px;
+}
+
+.headsec{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.how_work img{
+    width: 40%;
+}
+.how_work p{
+    font-size: 3vw;
+}
+.how_work p:last-child{
+    margin-bottom: 30px;
+}
+.last_sec .price{
+    width: 70%;
+    padding-top: 20px;
+}
+
+.last_sec .price .text h5{
+    font-size: 18vw;
+}
+.last_sec .price .img_prod{
+    top: 10px;
+}
+.last_sec .price .text h4{
+    font-size: 5vw;
+    line-height: 1.2;
+}
+.last_sec .price .text p{
+    font-size: 3.5vw;
+}
+.last_sec .price .text span{
+    font-size: 1.7vw;
+}
+.last_sec .price .sm_p p{
+    font-size: 2.2vw;
+}
+}
+
+
+
+@media (min-width:1000px) {
+    .f_p p{
+        font-size: 4vw;
+    }
+    .group{
+        display: none;
+    }
+    .big_screen{
+        display: block;
+    }
+    
+    .home_sc .top_home{
+        display: flex;
+    }
+    .home_sc .top_home .box{
+        width: 50%;
+        text-align: center;
+        padding: 15px 0 15px;
+    }
+    .home_sc .top_home .box_text{
+        background:linear-gradient(-150deg , #4b5e4b , #212c21);
+        color: #fff;
+    
+    }
+    .home_sc .top_home .box_text h2{
+        font-size: 2.5vw;
+        line-height: 1.7;
+        color: #04b82b;
+    }
+    .home_sc .top_home .box_text p{
+        font-size: 2.6vw;
+        line-height: 1.7;
+    
+    }
+    .home_sc .top_home .box_img{
+        background: url(img/thanksbg.png);
+        color: #fff;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .home_sc .top_home .box_img img{
+        width: 80px;
+        margin-right: 15px;
+    }
+    .home_sc .top_home .box_img h3{
+        font-size: 3vw;
+        font-weight: bolder;
+        line-height: 1.4;
+        letter-spacing: 1.5px;
+    }
+    .home_sc .top_home .box_img h4{
+        line-height: 1.4;
+        font-size: 2.7vw;
+        letter-spacing: 2.5px;
+        position: relative;
+        width: max-content;
+        margin: auto;
+    }
+    .home_sc .top_home .box_img h4::after,
+    .home_sc .top_home .box_img h4::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 4px;
+        background: #fff;
+    }
+    .home_sc .top_home .box_img h4::after{
+        right: -25px;
+    }
+    .home_sc .top_home .box_img h4::before{
+        left: -30px;
+    }
+    .home_sc .home_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px 0;
+    
+    }
+    .home_sc .home_text img{
+        width: 220px;
+    }
+    .home_sc .home_text ul{
+        padding-top: 30px;
+    }
+    .home_sc .home_text ul li{
+        font-size: 26px;
+        font-weight: bolder;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    .home_sc .home_text .btn{
+        font-size: 2vw;
+    }
+    .home_sc .home_text ul li:last-child{
+        margin-bottom: 0;
+    }
+    
+    
+    
+    .flex_sec{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .flex_sec .doctor{
+        width: 50%;
+        margin-top: 0;
+    }
+    .doctor .content .text .img_p{
+        margin-top: 20px;
+    }
+    
+    .flex_sec .result{
+        width: 50%;
+    }
+    
+    .result h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    
+    
+    .doctor .headsec{
+        font-size: 35px;
+    }
+    .doctor .content .text li{
+        font-size: 2.4vw;
+    }
+    .doctor .content .doctorimg p{
+        font-size: 2.4vw;
+    }
+    .doctor .content .text .img_p p{
+        font-size: 2.1vw;
+    }
+    .result .box{
+        margin-bottom: 40px;
+    }
+    .result .box .content p{
+        font-size: 2.5vw;
+    }
+    
+    .result .box .content img{
+        width: 40px;
+        left: 40px;
+    }
+    
+    .headsec{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .how_work img{
+        width: 40%;
+    }
+    .how_work p{
+        font-size: 3vw;
+    }
+    .how_work p:last-child{
+        margin-bottom: 30px;
+    }
+    
+    .last_sec .price{
+        width: 50%;
+    }
+    .last_sec .price .text h5{
+        font-size: 10vw;
+    }
+    .last_sec .price .text h4{
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .last_sec .price .text p{
+        font-size: 2.5vw;
+        line-height: 1;
+    }
+    .last_sec .price .text span{
+        font-size: 1.7vw;
+    }
+    .last_sec .price .sm_p p{
+        font-size: 1.7vw;
+    }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* thanks page .html */
+
+.thanks{
+    height: 100vh;
+    background: url(img/thanksbg.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+}
+.thanks img{
+    width: 150px;
+    margin-top: 80px;
+}
+.thanks h2{
+    line-height: 1.5;
+    font-size: 7vw;
+}
+.thanks h4{
+    font-size: 4.5vw;
+}
+.thanks .div_btn a{
+    width: max-content;
+    font-size: 20px;
+    padding: 14px 20px;
+}
+
+@media (min-width:600px) {
+    .thanks img{
+        width: 200px;
+    }
+    .thanks h2{
+        line-height: 1.5;
+        font-size: 3.5vw;
+    }
+    .thanks h4{
+        font-size: 2.4vw;
+    }
+    .thanks .div_btn a{
+        font-size: 22px;
     }
 }
